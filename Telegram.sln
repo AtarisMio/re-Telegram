@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telegram", "Telegram\Telegram.csproj", "{644BA0E2-3778-428C-B783-A320F7D699A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F568B34-7C5A-433D-B70B-3FA853AB0BA4} = {2F568B34-7C5A-433D-B70B-3FA853AB0BA4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleLib", "TeleLib\TeleLib.csproj", "{2F568B34-7C5A-433D-B70B-3FA853AB0BA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{644BA0E2-3778-428C-B783-A320F7D699A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644BA0E2-3778-428C-B783-A320F7D699A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644BA0E2-3778-428C-B783-A320F7D699A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644BA0E2-3778-428C-B783-A320F7D699A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F568B34-7C5A-433D-B70B-3FA853AB0BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F568B34-7C5A-433D-B70B-3FA853AB0BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F568B34-7C5A-433D-B70B-3FA853AB0BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F568B34-7C5A-433D-B70B-3FA853AB0BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
