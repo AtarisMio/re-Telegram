@@ -1,5 +1,4 @@
-﻿using FirstFloor.ModernUI.Windows.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,16 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Telegram
+namespace Telegram.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Home.xaml
     /// </summary>
-    public partial class MainWindow : ModernWindow
+    public partial class Home : UserControl
     {
-        public MainWindow()
+        public Home()
         {
-            FirstFloor.ModernUI.Presentation.AppearanceManager.Current.ThemeSource = FirstFloor.ModernUI.Presentation.AppearanceManager.DarkThemeSource;
             InitializeComponent();
         }
     }
