@@ -22,6 +22,10 @@ namespace Telegram.Pages.Controls
         /// </summary>
         public static readonly DependencyProperty isLeftProperty = DependencyProperty.Register("isLeft", typeof(ChatLayout), typeof(PopoChat), new PropertyMetadata(ChatLayout.Others));
         /// <summary>
+        /// Identifies the isLeft dependency property.
+        /// </summary>
+        public static readonly DependencyProperty typeProperty = DependencyProperty.Register("Type", typeof(ChateType), typeof(PopoChat), new PropertyMetadata(ChateType.Text));
+        /// <summary>
         /// Identifies the PopoFigure dependency property.
         /// </summary>
         public static readonly DependencyProperty PopoFigureProperty = DependencyProperty.Register("PopoFigure", typeof(Geometry), typeof(PopoChat), new PropertyMetadata(Geometry.Parse("M10,10 c 0,-5.523 4.477,-10 10,-10 h 230 c 5.523,0 10,4.477 10,10 v 70 c 0,5.523 -4.477,10 -10,10 h -230 c -5.523,0 -10,-4.477 -10,-10 v -60 l -10,-10 z")));
@@ -101,18 +105,18 @@ namespace Telegram.Pages.Controls
             }
         }
 
-        //public string PopoText
-        //{
-        //    get
-        //    {
-        //        return (string)GetValue(PopoTextProperty);
-        //    }
+        public ChateType Type
+        {
+            get
+            {
+                return (ChateType)GetValue(typeProperty);
+            }
 
-        //    set
-        //    {
-        //        SetValue(PopoTextProperty, value);
-        //    }
-        //}
+            set
+            {
+                SetValue(typeProperty, value);
+            }
+        }
 
         public string PopoText
         {
@@ -161,5 +165,9 @@ namespace Telegram.Pages.Controls
     public enum ChatLayout
     {
         Others, Me
+    }
+    public enum ChateType
+    {
+        Text,Voice,Picture,File
     }
 }
