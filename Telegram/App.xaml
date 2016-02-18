@@ -7,7 +7,9 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
                 <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Light.xaml"/>
+                <ResourceDictionary Source="/Pages/Templates/PopoChat.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            <BitmapImage x:Key="icon1" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\Users\mio51\Source\Repos\re-Telegram\Telegram\Asset\icon.jpg"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
